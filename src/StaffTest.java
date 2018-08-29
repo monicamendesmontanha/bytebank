@@ -4,7 +4,7 @@ public class StaffTest {
 
         Staff nico = new Staff();
 
-        nico.setName("John");
+        nico.setName("John Doe");
         nico.setId(("2240335644-9"));
         nico.setSalary(2600.00);
 
