@@ -2,7 +2,7 @@ public class StaffTest {
 
     public static void main(String[] args) {
 
-        Staff s1 = new Staff();
+        Staff s1 = new Manager();
 
         s1.setName("John Doe");
         s1.setId(("2240335644-9"));
