@@ -2,13 +2,13 @@ public class StaffTest {
 
     public static void main(String[] args) {
 
-        Staff john = new Staff();
+        Staff s1 = new Staff();
 
-        john.setName("John Doe");
-        john.setId(("2240335644-9"));
-        john.setSalary(2600.00);
+        s1.setName("John Doe");
+        s1.setId(("2240335644-9"));
+        s1.setSalary(2600.00);
 
-        System.out.println(john.getName());
-        System.out.println(john.getBonus());
+        System.out.println(s1.getName());
+        System.out.println(s1.getBonus());
     }
 }
