@@ -1,19 +1,22 @@
 package staff;
 
-public class Manager extends AuthenticatedStaff {
+public class Manager extends Staff implements Authenticated {
 
-    private int password;
+    private Authentication authentication;
 
-    public void setPassword(int password) {
-        this.password = password;
+    public Manager(){
+
+        this.authentication = new Authentication();
     }
 
-    public boolean authenticates (int password) {
-        if (this.password == password) {
-            return true;
-        } else {
-            return false;
-        }
+    @Override
+    public void setPassword(int password) {
+        this.authentication.setPassword(password);
+    }
+
+    @Override
+    public boolean authenticates(int password) {
+        return this.authentication.authenticates(password);
     }
 
     @Override

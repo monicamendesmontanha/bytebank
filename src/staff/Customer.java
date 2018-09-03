@@ -1,10 +1,16 @@
 package staff;
 
-public class Customer {
+public class Customer implements Authenticated {
 
     private String name;
     private String id;
     private String occupation;
+    private Authentication authentication;
+
+    public Customer(){
+
+        this.authentication = new Authentication();
+    }
 
     public String getName() {
         return name;
@@ -30,4 +36,13 @@ public class Customer {
         this.occupation = occupation;
     }
 
+    @Override
+    public void setPassword(int password) {
+        this.authentication.setPassword(password);
+    }
+
+    @Override
+    public boolean authenticates(int password) {
+        return this.authentication.authenticates(password);
+    }
 }

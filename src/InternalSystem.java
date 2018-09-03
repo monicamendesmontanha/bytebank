@@ -1,10 +1,10 @@
-import staff.AuthenticatedStaff;
+import staff.Authenticated;
 
 public class InternalSystem {
 
     private int password = 2222;
 
-    public void authenticates (AuthenticatedStaff sa){
+    public void authenticates (Authenticated sa){
 
         boolean authenticated = sa.authenticates(this.password);
 
