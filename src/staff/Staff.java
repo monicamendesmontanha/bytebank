@@ -1,8 +1,12 @@
-public class Customer {
+package staff;
+
+public abstract class Staff {
 
     private String name;
     private String id;
-    private String occupation;
+    private double salary;
+
+    public abstract double getBonus();
 
     public String getName() {
         return name;
@@ -20,12 +24,12 @@ public class Customer {
         this.id = id;
     }
 
-    public String getOccupation() {
-        return occupation;
+    public double getSalary() {
+        return salary;
     }
 
-    public void setOccupation(String occupation) {
-        this.occupation = occupation;
+    public void setSalary(double salary) {
+        this.salary = salary;
     }
 
 }

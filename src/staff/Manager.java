@@ -1,4 +1,6 @@
-public class Manager extends Staff {
+package staff;
+
+public class Manager extends AuthenticatedStaff {
 
     private int password;
 

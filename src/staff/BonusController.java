@@ -1,3 +1,7 @@
+package staff;
+
+import staff.Staff;
+
 public class BonusController {
 
     private double sum;

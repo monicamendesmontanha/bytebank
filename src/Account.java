@@ -1,3 +1,5 @@
+import staff.Customer;
+
 public class Account {
 
     private double balance;

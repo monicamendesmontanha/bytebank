@@ -1,10 +1,10 @@
-public abstract class Staff {
+package staff;
+
+public class Customer {
 
     private String name;
     private String id;
-    private double salary;
-
-    public abstract double getBonus();
+    private String occupation;
 
     public String getName() {
         return name;
@@ -22,12 +22,12 @@ public abstract class Staff {
         this.id = id;
     }
 
-    public double getSalary() {
-        return salary;
+    public String getOccupation() {
+        return occupation;
     }
 
-    public void setSalary(double salary) {
-        this.salary = salary;
+    public void setOccupation(String occupation) {
+        this.occupation = occupation;
     }
 
 }

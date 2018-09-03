@@ -1,3 +1,5 @@
+package staff;
+
 public class StaffTest {
 
     public static void main(String[] args) {

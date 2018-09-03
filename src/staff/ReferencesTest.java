@@ -1,3 +1,9 @@
+package staff;
+
+import staff.Lawyer;
+import staff.Manager;
+import staff.Secretary;
+
 public class ReferencesTest {
     public static void main(String[] args) {
 
