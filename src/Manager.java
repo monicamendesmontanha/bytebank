@@ -16,6 +16,6 @@ public class Manager extends Staff {
 
     @Override
     public double getBonus() {
-        return super.getBonus() + super.getSalary();
+        return getSalary() + (0.1 * getSalary());
     }
 }

@@ -4,9 +4,7 @@ public abstract class Staff {
     private String id;
     private double salary;
 
-    public double getBonus() {
-        return this.salary * 0.1;
-    }
+    public abstract double getBonus();
 
     public String getName() {
         return name;
